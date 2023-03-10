@@ -32,6 +32,7 @@ class NotVerified(Exception):
 class UserNotFound(Exception):
     pass
 
+
 def require_user(db: Session = Depends(get_db), Authorize: AuthJWT = Depends()):
     try:
         Authorize.jwt_required()
