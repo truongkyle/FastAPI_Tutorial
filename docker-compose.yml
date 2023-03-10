@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_FastAPI_tutorial
+    ports:
+      - '6503:5432'
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - postgres-db:/var/lib/postgressql/data
+volumes:
+  postgres-db:
