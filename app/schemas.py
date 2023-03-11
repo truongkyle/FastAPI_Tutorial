@@ -3,7 +3,7 @@ import uuid
 from pydantic import BaseModel, EmailStr, constr
 
 class UserBaseSchema(BaseModel):
-    name = str
+    name : str
     email: EmailStr
     photo: str
     class Config:

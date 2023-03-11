@@ -2,7 +2,7 @@ version: '3'
 services:
   postgres:
     image: postgres
-    container_name: postgres_FastAPI_tutorial
+    container_name: postgres_fast_api
     ports:
       - '6503:5432'
     restart: always
