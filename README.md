@@ -19,6 +19,7 @@
 `pip install alembic`
 ## create a migration environment 
 `alembic init alembic`
+`alembic revision --autogenerate -m "creat users table"`
 `alembic upgrade head`
 ## start the FastAPI server with the command line:
 `uvicorn app.main:app --host localhost --port 8000 --reload`
